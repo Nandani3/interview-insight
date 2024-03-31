@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Details</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <h1>Interview Details</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company Reviews</a></li>
+            <li><a href="submit.html">Submit Q&A</a></li>
+            <li><a href="login.html">Login</a></li> <!-- Add a link to the login page -->
+        </ul>
+    </nav>
+    <main>
+        <section id="interview-details">
+            <h2>Interview Details for data analyst Position</h2>
+            <div class="interview">
+                <h3>Google Software Engineering Internship</h3>
+                <p><strong>Question:</strong> How would you reverse a linked list?</p>
+                <p><strong>Company:</strong> Google</p>
+                <p><strong>Interviewer:</strong> John Doe</p>
+                <p><strong>Uploaded by:</strong> User123</p> <!-- Display the user who uploaded the question -->
+                <button onclick="openChat('User123')">Chat</button> <!-- Button to open a chat with the user -->
+            </div>
+            <div class="interview">
+                <h3>Facebook Data Analyst Interview</h3>
+                <p><strong>Question:</strong> Explain a time you analyzed a large dataset and the outcome.</p>
+                <p><strong>Company:</strong> Facebook</p>
+                <p><strong>Interviewer:</strong> Jane Smith</p>
+                <p><strong>Uploaded by:</strong> User456</p> <!-- Display the user who uploaded the question -->
+                <button onclick="openChat('User456')">Chat</button> <!-- Button to open a chat with the user -->
+            </div>
+            <!-- Add more interview details as needed -->
+        </section>
+        <section id="post-question">
+            <h2>Post Your Interview Question</h2>
+            <form action="submit_question.php" method="POST">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required><br>
+                
+                <label for="position">Position/Role:</label>
+                <input type="text" id="position" name="position" required><br>
+                
+                <label for="interview_question">Interview Question:</label><br>
+                <textarea id="interview_question" name="interview_question" rows="4" required></textarea><br>
+                
+                <label for="review">Your Review/Experience:</label><br>
+                <textarea id="review" name="review" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <!-- <section id="post-question">
+            <h2>Post Your Interview Question</h2>
+            <form action="submit_question.php" method="POST">
+                <label for="interview_question">Interview Question:</label><br>
+                <textarea id="interview_question" name="interview_question" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section> -->
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Interview Q&A Hub</p>
+    </footer>
+
+    <script>
+        function openChat(username) {
+            // Code to open a chat window with the specified user
+            alert("Chat with " + username);
+        }
+    </script>
+</body>
+</html>

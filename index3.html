@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Q&A Hub</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <header>
+        <h1>Interview Q&A Hub</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company Reviews</a></li>
+            <li><a href="submit.html">Submit Q&A</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to Interview Q&A Hub!</h2>
+            <p>Prepare for your interviews by browsing questions asked by others. Share your interview experiences and company reviews to help fellow students.</p>
+        </section>
+        <section>
+            <h2>Recent Engineering Questions</h2>
+            <article>
+                <h3>Google Software Engineering Internship</h3>
+                <p><strong>Question:</strong> How would you reverse a linked list?</p>
+                <p><strong>Review:</strong> The interview was engaging and focused on data structures. The interviewer was supportive throughout the process.</p>
+            </article>
+            <article>
+                <h3>Facebook Data Analyst Interview</h3>
+                <p><strong>Question:</strong> Explain a time you analyzed a large dataset and the outcome.</p>
+                <p><strong>Review:</strong> The process was data-driven with a clear emphasis on practical experience. Great experience overall.</p>
+            </article>
+        </section>
+        <section id="post-question">
+            <h2>Post Your Interview Question</h2>
+            <form action="submit_question.php" method="POST">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required><br>
+                
+                <label for="position">Position/Role:</label>
+                <input type="text" id="position" name="position" required><br>
+                
+                <label for="interview_question">Interview Question:</label><br>
+                <textarea id="interview_question" name="interview_question" rows="4" required></textarea><br>
+                
+                <label for="review">Your Review/Experience:</label><br>
+                <textarea id="review" name="review" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Interview Q&A Hub</p>
+    </footer>
+</body>
+</html>

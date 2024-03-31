@@ -1,0 +1,73 @@
+.icons{
+    z-index: 2;
+}
+
+.project{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(203, 228, 237),white);
+
+
+}
+.project .heading{
+    color:#000;
+}
+
+.subHeading{
+ color: #444;
+ margin-left: 250px;
+
+}
+
+.under-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under-sub-content-2{
+    margin-top: 40px;
+    width: 85%;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.under-sub-content-1{
+    margin-top: 40px;
+    width: 85%;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.project .box-container .box{
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0 .2rem .5rem #000;
+    overflow: hidden;
+}
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project .box-container .box  h3{
+    font-size: 2rem;
+    color: orchid;
+    padding: 0 .5rem;
+}
+.project .box-container .box img:hover{
+    transform: scale(1.4);
+
+}
