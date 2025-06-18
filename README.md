@@ -30,4 +30,48 @@
    ```bash
    git clone https://github.com/Nandani3/interview-insight.git
    cd interview-insight
+   
+2. **Create a virtual environment**
+   python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+
+3. **Install dependencies**
+ pip install -r requirements.txt
+
+4. **Run the app**
+   flask run
+
+5. **Access locally**
+    Open http://127.0.0.1:5000/ in your browser
+
+   **FOLDER STRUCTURE **
+interview-insight/
+│
+├── static/              # CSS, JS, images
+├── templates/           # HTML templates (home, interview page, result, etc.)
+├── app.py               # Main Flask application
+├── model/               # ML models or APIs integration
+├── utils.py             # Helper functions
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+
+
+**TroubleShooting**
+
+| Issue                      | Possible Cause                                  | Solution                                                                          |
+| -------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Flask app not starting** | Virtual environment not activated               | Activate the virtual environment and try `flask run` again                        |
+| **ModuleNotFoundError**    | Missing dependencies                            | Run `pip install -r requirements.txt` to install all packages                     |
+| **API key errors**         | Missing or incorrect API keys for OpenAI/Gemini | Ensure your `.env` or `config.py` has valid keys properly set                     |
+| **CSS not loading**        | Static folder not linked correctly              | Make sure `{{ url_for('static', filename='...') }}` is used properly in templates |
+| **Ngrok not working**      | Token not set or tunnel expired                 | Run `ngrok config add-authtoken <your_token>` and restart Ngrok                   |
+| **Answer evalu**           |                                                 |                                                                                   |
+
+
+
+
+   
+
+
+
 
